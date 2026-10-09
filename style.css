@@ -35,7 +35,6 @@ header {
     letter-spacing: 1px;
     cursor: default;
 }
-}
 
 nav {
     display: flex;
@@ -381,4 +380,340 @@ footer p + p {
         display: flex;
     }
 
+}/* SiteNova Portfolio Upgrade */
+
+.portfolio-section {
+    background: #eef3fa;
+}
+
+.portfolio-eyebrow {
+    display: inline-block;
+    color: #3578e5;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.portfolio-section h2 {
+    max-width: 750px;
+    margin: 0 auto 15px;
+}
+
+.portfolio-intro {
+    max-width: 650px;
+    margin: 0 auto 40px;
+    color: #667085;
+    font-size: 17px;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 620px);
+    justify-content: center;
+    gap: 28px;
+}
+
+.portfolio-card {
+    width: 100%;
+    max-width: 620px;
+    padding: 0;
+    overflow: hidden;
+    text-align: left;
+    border: 1px solid #e1e8f2;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(16, 24, 40, 0.09);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 45px rgba(16, 24, 40, 0.14);
+}
+
+.portfolio-image-wrap {
+    position: relative;
+    background: #dfe7f3;
+    overflow: hidden;
+}
+
+.portfolio-image {
+    display: block;
+    width: 100%;
+    max-width: none;
+    height: auto;
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.portfolio-label {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    margin: 0;
+    background: #ffffff;
+    color: #245bb5;
+    box-shadow: 0 3px 12px rgba(16, 24, 40, 0.1);
+}
+
+.portfolio-content {
+    padding: 30px;
+}
+
+.portfolio-category {
+    color: #3578e5;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+}
+
+.portfolio-card h3 {
+    margin: 10px 0;
+    font-size: 26px;
+    line-height: 1.3;
+}
+
+.portfolio-content > p {
+    margin-bottom: 20px;
+    color: #667085;
+}
+
+.portfolio-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 25px;
+}
+
+.portfolio-tags span {
+    padding: 6px 11px;
+    background: #f0f5ff;
+    color: #344b70;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.portfolio-btn {
+    text-align: center;
+}
+
+.portfolio-footer-note {
+    margin-top: 35px;
+    color: #667085;
+}
+
+.portfolio-footer-note a {
+    color: #3578e5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.portfolio-footer-note a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .portfolio-content {
+        padding: 22px;
+    }
+
+    .portfolio-card h3 {
+        font-size: 23px;
+    }
+
+    .portfolio-intro {
+        font-size: 16px;
+    }
+
+    .portfolio-btn {
+        display: block;
+        width: 100%;
+    }
+}
+/* =================================
+   SiteNova Service Packages
+================================= */
+
+.packages-section {
+    background: #ffffff;
+}
+
+.packages-eyebrow {
+    display: inline-block;
+    color: #3578e5;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.packages-section h2 {
+    max-width: 760px;
+    margin: 0 auto 15px;
+}
+
+.packages-intro {
+    max-width: 650px;
+    margin: 0 auto 45px;
+    color: #667085;
+    font-size: 17px;
+}
+
+.package-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1150px;
+    margin: 0 auto;
+    align-items: stretch;
+}
+
+.package-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    background: #ffffff;
+    border: 1px solid #dfe6f0;
+    border-radius: 20px;
+    padding: 30px 25px;
+    box-shadow: 0 8px 25px rgba(16, 24, 40, 0.06);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(16, 24, 40, 0.11);
+}
+
+.package-featured {
+    border: 2px solid #4f8cff;
+    background: #f8fbff;
+}
+
+.package-icon {
+    font-size: 30px;
+    margin-bottom: 18px;
+}
+
+.package-label {
+    color: #3578e5;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    margin-bottom: 10px;
+}
+
+.package-card h3 {
+    font-size: 23px;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    color: #172033;
+}
+
+.package-description {
+    color: #667085;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.package-card ul {
+    list-style: none;
+    width: 100%;
+    margin: 0 0 25px;
+    padding: 0;
+}
+
+.package-card li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 13px;
+    font-size: 14px;
+    color: #344054;
+}
+
+.package-card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #3578e5;
+    font-weight: bold;
+}
+
+.package-btn {
+    display: block;
+    width: 100%;
+    margin-top: auto;
+    padding: 13px 15px;
+    border-radius: 10px;
+    background: #101828;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s, transform 0.2s;
+}
+
+.package-btn:hover {
+    background: #3578e5;
+    transform: translateY(-2px);
+}
+
+.package-featured .package-btn {
+    background: #3578e5;
+}
+
+.package-featured .package-btn:hover {
+    background: #245bb5;
+}
+
+.custom-quote-note {
+    max-width: 760px;
+    margin: 40px auto 0;
+    padding: 25px;
+    background: #f0f5ff;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.custom-quote-note strong {
+    display: block;
+    margin-bottom: 8px;
+    color: #172033;
+    font-size: 18px;
+}
+
+.custom-quote-note p {
+    color: #667085;
+    font-size: 15px;
+}
+
+/* Tablet and mobile */
+
+@media (max-width: 950px) {
+    .package-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .package-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 20px;
+    }
+
+    .package-card {
+        padding: 25px 22px;
+    }
+
+    .packages-intro {
+        font-size: 16px;
+    }
+
+    .custom-quote-note {
+        padding: 20px;
+    }
 }
