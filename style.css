@@ -716,4 +716,106 @@ footer p + p {
     .custom-quote-note {
         padding: 20px;
     }
+}  
+/* SiteNova FAQ Section */
+
+.faq-section {
+    background: #f7f9fc;
+}
+
+.faq-eyebrow {
+    display: inline-block;
+    color: #3578e5;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.faq-section h2 {
+    margin-bottom: 15px;
+}
+
+.faq-intro {
+    max-width: 650px;
+    margin: 0 auto 35px;
+    color: #667085;
+    font-size: 17px;
+}
+
+.faq-list {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.faq-item {
+    margin-bottom: 14px;
+    padding: 0 22px;
+    background: #ffffff;
+    border: 1px solid #e1e8f2;
+    border-radius: 14px;
+    box-shadow: 0 4px 15px rgba(16, 24, 40, 0.04);
+}
+
+.faq-item summary {
+    padding: 20px 28px 20px 0;
+    position: relative;
+    cursor: pointer;
+    list-style: none;
+    font-weight: 700;
+    color: #172033;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    color: #3578e5;
+    font-size: 23px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.faq-item[open] summary::after {
+    content: "−";
+}
+
+.faq-item p {
+    padding: 0 0 20px;
+    color: #667085;
+    font-size: 15px;
+}
+
+.faq-contact {
+    margin-top: 28px;
+    color: #667085;
+}
+
+.faq-contact a {
+    color: #3578e5;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.faq-contact a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .faq-intro {
+        font-size: 16px;
+    }
+
+    .faq-item {
+        padding: 0 16px;
+    }
+
+    .faq-item summary {
+        font-size: 15px;
+    }
 }
